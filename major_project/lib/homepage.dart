@@ -2,10 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:major_project/dial_number.dart';
 import 'package:major_project/exit_app.dart';
-import 'package:major_project/save_contact.dart';
 import 'package:major_project/text_recognition.dart';
 import 'package:major_project/voice_assistant.dart';
-import 'face_recognition.dart';
+import 'package:major_project/face_recognition.dart';
 
 class HomePage extends StatelessWidget {
   final FlutterTts flutterTts = FlutterTts();

@@ -145,7 +145,7 @@ class HomePage extends StatelessWidget {
               ),
               onDoubleTap: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return const VoiceAssistant();
+                  return VoiceAssistant();
                 }));
               },
             ),

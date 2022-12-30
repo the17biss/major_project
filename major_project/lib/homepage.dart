@@ -130,35 +130,6 @@ class HomePage extends StatelessWidget {
               child: ElevatedButton(
                 style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all<Color>(
-                        const Color.fromARGB(255, 237, 50, 147))),
-                child: const Text(
-                  'Save Contact',
-                  style: TextStyle(
-                    fontSize: 25,
-                    color: Color.fromARGB(255, 17, 0, 0),
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-                onPressed: () async {
-                  await flutterTts.setLanguage("en-US");
-                  await flutterTts.speak("Save Contact");
-                },
-              ),
-              onDoubleTap: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return const SaveContact();
-                }));
-              },
-            ),
-          ),
-          Container(
-            width: double.infinity,
-            height: 75,
-            margin: const EdgeInsets.all(10),
-            child: GestureDetector(
-              child: ElevatedButton(
-                style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all<Color>(
                         Color.fromARGB(255, 228, 232, 16))),
                 child: const Text(
                   'Voice Assistant',
